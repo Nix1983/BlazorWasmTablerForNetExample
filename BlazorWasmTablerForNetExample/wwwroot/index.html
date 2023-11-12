@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#03173d">
+    <title>BlazorWasmTablerForNetExample</title>
+    <base href="/" />
+    <!--Preloading resources-->
+    <link rel="manifest" href="manifest.json" />
+    <link href="css/app.css" rel="preload" as="style" />
+    <link href="_content/TablerForNet/css/tablerForNet.min.css" rel="preload" as="style" />
+
+    <!--CSS-->
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="_content/TablerForNet/css/tablerForNet.min.css" rel="stylesheet" />
+
+    <link href="icons/logo.svg" rel="icon" type="image/png" />
+    <link href="icons/logo.svg" rel="apple-touch-icon" sizes="any">
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="/error" class="reload">Reload</a>
+        <a href="/error" class="dismiss">🗙</a>
+    </div>
+    <script src="_content/TablerForNet/js/tablerForNet.min.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>
